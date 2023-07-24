@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HAKKIMDA</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  font-family: Copperplate, Papyrus, fantasy;
+  padding: 40px;
+  text-align: center;
+  background: #f8f9f9;
+  color: rgb(10, 0, 0);
+}
+
+.navbar {
+    font-family: Copperplate, Papyrus, fantasy;
+    display: flex;
+    background-color: #333;
+  }
+
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+.row {
+  margin-top: 10px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+.column {
+  width: 33.33%; /* üç resmin eşit genişlikte gösterilmesini sağlar */
+  float: left; /* üç resmi yan yana hizalar */
+  box-sizing: border-box; /* kenarlıkları dahil ederek kutu modelini hesaplar */
+  padding: 10px; /* kenar boşluğu ekler */
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+.resim, .resim1, .resim2 {
+  display: block; /* resmi blok öğesi olarak görüntüle */
+  max-width: 300px; /* resim maksimum genişlikte gösterilecek */
+  height: auto; /* resimlerin yüksekliği sabit olacak */
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Beni Tanıyın</h2>
+</div>
+
+
+<div class="navbar">
+  <a href="anasayfa.html">Anasayfa</a>
+  <a href="gezelim.html">Gezelim</a>
+  <a href="gurme.html">Gurme</a>
+  <a href="yazılım.html">Yazılım</a>
+  <a href="hakkımda.html">Hakkımda</a>
+  <a href="iletisim.html">Iletisim</a>
+</div>
+
+<div class="row" style="display: grid; grid-template-columns: repeat(3, 1fr); place-items: center;">
+  <div class="column"  >
+    <img class="resim" src="resim/f.jpg" alt="">
+    <p>Adım Dilşenur Gaygısız 21 yaşındayım. Fırat üniversitesinde 3. sınıf yazılım mühendisliği öğrencisiyim. 
+    </p>
+  </div>
+  <div class="column" >
+    <img class="resim1" src="resim/ff.jpg"  alt="" >
+    <p>Kayseride doğdum büyüdüm. gezmeyi yemeyi ver arkadaşlarımla vakit geçirmeyi çok seviyorum ve bu yaşantımın bir kısmını sizlerle
+      paylaşmak istedim.
+</p>
+   
+  </div>
+  <div class="column" >
+    <img class="resim2" src="resim/ffff.jpg" alt="">
+    <p>Yazılımda Fronted tarafında kendimi geliştirmek ve başarılı bir yazılımcı olmak istiyorum.</p>
+   
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
+

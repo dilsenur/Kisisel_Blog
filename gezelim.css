@@ -1,0 +1,80 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+.header {
+  font-family: Copperplate, Papyrus, fantasy;
+  padding: 40px;
+  text-align: center;
+  background: #f8f9f9;
+  color: rgb(10, 0, 0);
+}
+
+.navbar {
+  font-family: Copperplate, Papyrus, fantasy;
+  display: flex;
+  background-color: #333;
+}
+
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {
+  font-family: "Trebuchet MS", Helvetica, sans-seri;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.img {
+  
+  width: 50%;
+  padding: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
